@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+}
+
+.main-login {
+    width: 1500px;
+    height: 1000px;
+    background: rgb(32, 83, 52);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.left-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.esqimage {
+    width: 500px;
+
+}
+
+.dirimage {
+    width: 100px;
+}
+
+.right-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*container do formulario*/
+.card-login {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+/* Pergunta sobre*/
+.bloco3 {
+    width: 100%;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px 10px;
+    background: rgb(228, 208, 34);
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.bloco4 {
+    width: 100%;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px 10px;
+    background: #00ff88;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+
+h1 {
+    font-weight: 800;
+    margin: 0;
+}
+
+.textfield {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+#input1 {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #9c8bcc;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+#corlabel {
+    color: #f0ffffde;
+    margin-bottom: 10px;
+}
+
+
+.button-login {
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #eddfff;
+    background: rgb(69, 102, 211);
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px rgb(82, 121, 248);
+}

@@ -1,0 +1,53 @@
+*{font-family: Bebas Neue;}
+
+:root{
+    --corPrincipal: rgb(7, 122, 76);
+    --corSecundaria: rgb(218, 218, 47);
+    --corTexto1: white;
+    --corTexto2: rgb(65, 110, 168);
+    --corTexto3: rgb(216, 70, 70);
+}
+
+body {
+    background-color: var(--corTexto2);
+}
+
+h1 {
+    color: var(--corPrincipal);
+    text-align: center;
+    font-weight: bolder;
+    font-size: 70px;
+}
+
+table, th, td {border: 2px groove var(--corTexto2);
+    border-radius: 10px; 
+    width: 50%px;
+    background-color: white;
+    color:var(--corTexto3);
+    text-align: center; /*alinhamento do texto*/}
+
+
+#titulo-departamento h3{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--corPrincipal);
+}
+
+#imagem {
+    text-align: center;
+}
+
+.descricao-departamentos {
+    text-align: justify;
+    font-size: 20px;
+    color: var(--corTexto1);
+
+}
+
+#nomes {
+    color: var(--corTexto3);
+    text-decoration: underline;
+    font-weight: bold;
+
+}

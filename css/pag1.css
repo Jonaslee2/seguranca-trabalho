@@ -1,0 +1,210 @@
+/* o asteristico estiliza tudo*/
+* {
+    font-family: Bebas Neue;
+}
+
+/* :root cria variáveis dentro do CSS para definir valores padrões; serve pra qualquer tipo de
+estilização, não só cores*/
+
+:root {
+    --corPrincipal: rgb(7, 122, 76);
+    --corSecundaria: rgb(218, 218, 47);
+    --corTexto1: white;
+    --corTexto2: rgb(65, 110, 168);
+    --corTexto3: rgb(216, 70, 70);
+}
+
+img {
+    width: 350px;
+    height: 350px;
+}
+
+#construtora {
+    background: linear-gradient(rgb(238, 238, 241, .2), rgb(236, 236, 241)), url("../imagens/qualidade-na-construcao.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    /* preenche 100% da tela*/
+    /* background-repeat: no-repeat; */
+    display: flex;
+    /*permite manipular os elementos filhos*/
+    justify-content: space-around;
+    /*igualmente espaçado em relação às bordas*/
+    align-items: center;
+    color: var(--corTexto1);
+    /*uso da variável criada acima*/
+}
+
+#titulo-principal h1,
+#titulo-principal .descricao-negocio {
+    color: var(--corPrincipal);
+    text-align: center;
+}
+
+.descricao-negocio,
+.descricao-empresa {
+    color: #574a79;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+#titulo-principal h1 {
+    font-size: 5em;
+    /* em é unidade de medida da fonte
+    usada para responsividade, ou seja, para se adaptar
+    a qualquer tamanho ou tipo de tela*/
+    margin-bottom: 1em;
+}
+
+#titulo-principal .descricao-negocio {
+    font-weight: bold;
+}
+
+/* 2ª PARTE */
+
+#especialidades h2 {
+    background-color: var(--corPrincipal);
+    /*adiciona cor de fundo*/
+    text-align: center;
+    /*alinhamento ao centro*/
+    padding: 2em;
+    /*para afastar o texto das bordas*/
+    font-weight: 500;
+    color: var(--corTexto1);
+}
+
+.itens {
+    display: flex;
+    /*possibilita a estilização dos itens um ao lado do outro*/
+    justify-content: space-around;
+    /*realiza a separação dos meus itens de forma igual*/
+    padding: 4em;
+    /*distanciamento dos cantos da div*/
+    width: 80%;
+    /*define a largura da área útil*/
+    margin: 0 auto;
+    /* o auto faz centralizar o conteúdo*/
+
+}
+
+.item {
+    text-align: center;
+    display: flex;
+    /*define a disposição dos elementos na página, se fica um em cima do outro,
+    um do lado do outro, etc*/
+    flex-direction: column;
+    /*define imagem em cima e texto embaixo*/
+    align-items: center;
+    max-width: 20%;
+    color: #574a79;
+
+
+}
+
+.item .item-img {
+    width: 250px;
+    /*definição de largura*/
+    height: 250px;
+    /*definição de altura*/
+    background-size: cover;
+    background-color: aquamarine;
+    background-position: center;
+    margin-bottom: 1em;
+    /*para afastar a imagem do texto*/
+    border-radius: 30%;
+    /*arredondamento das bordas do elemento*/
+}
+
+/*estilização de cada um dos IDs, inserindo as respectivas imagens*/
+
+#item1 {
+    background-image: url("../imagens/soldador-solda.jpeg");
+}
+
+#item2 {
+    background-image: url("../imagens/gasista.jpg");
+}
+
+#item3 {
+    background-image: url("../imagens/forneiro.jpg");
+}
+
+
+
+/* 3ª PARTE */
+
+#inscricao h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+#inscricao .cadastre-se {
+    font-size: 2em;
+    /* text-transform: uppercase; - transforma em letras maiúscula */
+    max-width: 350px;
+    /*limita a largura máxima para quebrar linha*/
+    margin-bottom: 1em;
+    /*para afastar dos elementos inferiores*/
+}
+
+#form {
+    background-color: var(--corPrincipal);
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+}
+
+#formulario-inscricao {
+    background-color: #2f2841;
+    padding: 2em;
+    max-width: 30%;
+}
+
+#formulario-inscricao p {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    color: #00ff88;
+
+}
+
+.grupo-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.8em
+}
+
+.grupo-form label {
+    color: var(--corTexto1);
+    margin-bottom: 0.3em;
+    font-weight: bold
+}
+
+.grupo-form input,
+.grupo-form select {
+    padding: 6px 8px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    /*remove a linha ao redor do campo*/
+}
+
+.botao {
+    background-color: var(--corSecundaria);
+    text-transform: uppercase;
+    width: 100%;
+    border: none;
+    padding: 1.2px;
+    cursor: pointer;
+    /*aciona a mãozinha ao passar o mouse no botão*/
+    opacity: 0.5px;
+}
+
+.botao.hover {
+    /*ao passar o cursor por cima do botão*/
+    opacity: 1px;
+}
